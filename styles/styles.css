@@ -10,7 +10,6 @@ styles.css -- Global styles for the MyRWD website
 */
 
 /* ----- Basic Styling ----- */
-
 body {
   background-color: lightblue
 }
@@ -44,24 +43,42 @@ footer {
   background-color: silver;
 }
 
-/* ----- Three-Column Fixed Layout ----- */
-#page-wrapper {
+/* ----- One-Column Mobile Layout -----*/
+#fluid-columns, nav, #content, #sidebar {
+  width: 100%;
+}
+
+@media all and (min-width: 525px) {
+  /* ----- Two-Column Fluid Layout ----- */
+  #page-wrapper {
+    width: 100%;
+  }
+  nav {
+    float: left;
+    width: 21.875%;
+    box-sizing: border-box;
+  }
+  #content {
+    float: left;
+    width: 78.125%;
+    box-sizing: border-box;
+  }
+  #sidebar {
+    float: left;
+    width: 16.667%;
+    box-sizing: border-box;
+  }
+}
+
+@media all and (min-width: 960px) {
+  /* ----- Three-Column Fixed Layout ----- */
+  #page-wrapper {
   width: 960px;
 }
-nav {
-  float: left;
-  width: 175px;
-  box-sizing: border-box;
+  #fluid-columns {
+  width: 800px;
 }
-#content {
-  float: left;
-  width: 625px;
-  box-sizing: border-box;
 }
-#sidebar {
-  float: left;
-  width: 160px;
-  box-sizing: border-box;
-}
+
 
 
