@@ -24,9 +24,6 @@ body {
   padding: 0 1em;
   margin-bottom: 10px;
 }
-
-/* ----- Nav Bar ----- */
-
 nav{
   background-color:gray;
   padding: 0;
@@ -36,3 +33,4 @@ nav ul {
   padding: 3px 10px;
   list-style-type: none;
 }
+
