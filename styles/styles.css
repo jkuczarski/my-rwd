@@ -1,7 +1,7 @@
 /**
 * ==========================================================================
-   styles.css -- Global styles for the MyRWD website
-   ========================================================================== 
+styles.css -- Global styles for the MyRWD website
+========================================================================== 
 
 *
 * Created April 2, 2014
@@ -16,7 +16,7 @@ body {
 }
 #page-wrapper{
   background-color:white;
-  margin: auto;
+  margin: 0 auto;
   max-width: 960px;
 }
 #content{
@@ -42,7 +42,6 @@ footer {
   width: 160px;
   height: 600px;
   background-color: silver;
-  
 }
 
 /* ----- Three-Column Fixed Layout ----- */
